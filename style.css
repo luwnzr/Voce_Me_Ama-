@@ -1,1 +1,101 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #1e1e1e, #550a46);
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
 
+.container {
+    background: #2c2c2c;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.7);
+    position: relative;
+}
+
+h1 {
+    color: #ff69b4;
+    margin-bottom: 20px;
+}
+
+/* Ursinho */
+#teddy {
+    width: 120px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.shake {
+    transform: rotate(-5deg);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 15px;
+}
+
+button {
+    padding: 15px 25px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+#yes-btn {
+    background: #ff69b4;
+    color: white;
+}
+
+#no-btn {
+    background: #444;
+    color: white;
+}
+
+#yes-btn:hover {
+    background: #d10078;
+}
+
+#no-btn:hover {
+    background: #ff0000;
+}
+
+.hidden {
+    display: none;
+}
+
+#message {
+    font-size: 22px;
+    margin-top: 20px;
+    background: rgba(255, 20, 147, 0.2);
+    padding: 15px;
+    border-radius: 10px;
+}
+
+/* Corações animados */
+.heart {
+    position: absolute;
+    color: #ff69b4;
+    font-size: 24px;
+    animation: floatUp 2s ease-in-out infinite;
+}
+
+@keyframes floatUp {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) scale(1.5);
+        opacity: 0;
+    }
+}
